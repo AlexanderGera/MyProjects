@@ -1,0 +1,5 @@
+.idea/
+
+#file with sending form throught e-mail settings
+VIAPLAST/mailer/smart.php
+
