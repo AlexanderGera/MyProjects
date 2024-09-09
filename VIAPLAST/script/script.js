@@ -1,7 +1,6 @@
 'use strict';
 
 // -------------- slow scroll to anchor
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -11,7 +10,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
 
 // -------------- hamburger menu
 
@@ -29,13 +27,11 @@ let menuLinks = document.getElementsByClassName('header-menu__link');
 
 Array.from(menuLinks).forEach((element) => {
     element.addEventListener('click', closeMenuOnClick);
-
 })
 
 function closeMenuOnClick() {
     headerMenu.classList.remove('active');
     hamburgerMenu.classList.remove('active');
-
 }
 
 // ------------- language buttons styles changing
@@ -51,6 +47,24 @@ if (pageLanguage === 'uk') {
 } else {
     ukrLangButton.classList.remove('active');
     engLangButton.classList.add('active');
+}
+
+
+//---------- english page open
+
+engLangButton.addEventListener('click', englishPageOpen);
+ukrLangButton.addEventListener('click', ukrPageOpen);
+
+function englishPageOpen(event) {
+    event.preventDefault();
+    let currentURL = window.location.href;
+    window.location.href = pageLanguage === 'uk' ? currentURL.replace('viaplast.com.ua', 'viaplast.com.ua/en') : currentURL;
+}
+
+function ukrPageOpen(event) {
+    event.preventDefault();
+    let currentURL = window.location.href;
+    window.location.href = pageLanguage === 'en' ? currentURL.replace('viaplast.com.ua/en', 'viaplast.com.ua') : currentURL;
 }
 
 //------ Gallery big image open
@@ -106,12 +120,10 @@ function formValidation() {
     return isValid;
 }
 
-
 function emailChecking(element) {
     let stringForEmailTesting = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return stringForEmailTesting.test(element.value);
 }
-
 
 contactForm.addEventListener('submit', (event) => {
     if (!formValidation()) {
@@ -145,15 +157,6 @@ function formSending(event, form) {
     };
 
     xhr.send(formData);
-}
-
-
-//------- open window 404 when english lang click
-
-engLangButton.addEventListener('click', openNoPage);
-
-function openNoPage() {
-    window.open('/404.html', '_self');
 }
 
 

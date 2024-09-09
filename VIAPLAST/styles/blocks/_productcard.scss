@@ -3,7 +3,6 @@
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: top;
   padding: 0 15px 50px;
   gap: 15px;
 
@@ -65,7 +64,6 @@
     z-index: 1;
   }
 
-
   &__product-preview-link {
     display: inline-block;
     position: relative;
@@ -81,7 +79,6 @@
       transform: translate(50%);
       opacity: 1;
       z-index: 9;
-
     }
 
     &:focus:before {
@@ -114,7 +111,6 @@
         font-size: 20px;
         line-height: 28px;
       }
-
       & .regular-text-font-style {
         font-size: 15px;
       }
@@ -130,7 +126,6 @@
     align-items: center;
     text-align: center;
   }
-
   .product-card {
     flex-wrap: wrap-reverse;
   }
