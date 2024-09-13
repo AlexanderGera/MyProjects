@@ -17,14 +17,12 @@ let headerMenu = document.getElementsByClassName('header-menu')[0];
 let hamburgerMenu = document.getElementsByClassName('hamburger-menu')[0];
 
 hamburgerMenu.addEventListener('click', mobileMenuToggle);
-
 function mobileMenuToggle() {
     headerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('active');
 }
 
 let menuLinks = document.getElementsByClassName('header-menu__link');
-
 Array.from(menuLinks).forEach((element) => {
     element.addEventListener('click', closeMenuOnClick);
 })
@@ -43,18 +41,15 @@ let engLangButton = document.getElementById('eng_lang');
 if (pageLanguage === 'uk') {
     ukrLangButton.classList.add('active');
     engLangButton.classList.remove('active');
-
 } else {
     ukrLangButton.classList.remove('active');
     engLangButton.classList.add('active');
 }
 
-
 //---------- english page open
 
 engLangButton.addEventListener('click', englishPageOpen);
 ukrLangButton.addEventListener('click', ukrPageOpen);
-
 function englishPageOpen(event) {
     event.preventDefault();
     let currentURL = window.location.href;
@@ -70,7 +65,6 @@ function ukrPageOpen(event) {
 //------ Gallery big image open
 
 document.addEventListener('DOMContentLoaded', function () {
-
     let previewLinks = document.querySelectorAll('.product-card__product-preview-link');
 
     previewLinks.forEach(function (link) {
@@ -83,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// ---------- form sanding
+// ---------- form sending
 
 let contactForm = document.getElementById('contactForm');
 let buttonSend = document.getElementById('buttonSend');
@@ -91,7 +85,6 @@ let listOfInputs = document.getElementsByClassName('contact-form__input');
 
 //not send the form when key Enter pressed
 enterShutDown();
-
 function enterShutDown() {
     Array.from(listOfInputs).forEach((element) => {
         element.addEventListener('keydown', (event) => {
@@ -101,7 +94,6 @@ function enterShutDown() {
         });
     });
 }
-
 function formValidation() {
     let isValid = true;
     Array.from(listOfInputs).forEach((element) => {
@@ -119,12 +111,10 @@ function formValidation() {
 
     return isValid;
 }
-
 function emailChecking(element) {
     let stringForEmailTesting = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return stringForEmailTesting.test(element.value);
 }
-
 contactForm.addEventListener('submit', (event) => {
     if (!formValidation()) {
         event.preventDefault();
@@ -159,7 +149,6 @@ function formSending(event, form) {
     xhr.send(formData);
 }
 
-
 // --- iframe with Youtube-script insert
 
 let divYouTubeHolder = document.getElementsByClassName('main-page-intro__video-holder')[0];
@@ -174,13 +163,10 @@ if (divYouTubeHolder) {
 // ---- scroll animation ----
 
 let itemsForAnimation = document.querySelectorAll('.scroll_animation');
-
-
 let newObserver = new IntersectionObserver(makeItemVisible, {
     threshold: 0.1,
     rootMargin: "35px",
 });
-
 function makeItemVisible(entries, newObserver) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -188,8 +174,6 @@ function makeItemVisible(entries, newObserver) {
         }
     });
 }
-
 itemsForAnimation.forEach(items => {
     newObserver.observe(items);
 })
-
