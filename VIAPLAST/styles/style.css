@@ -906,6 +906,9 @@ p {
   font-size: 23px;
   line-height: 32px;
 }
+.product-card__text-holder .products_header {
+  text-align: center;
+}
 .product-card__text-holder .regular-text-font-style, .product-card__text-holder .regular-text-font-style_bold {
   line-height: 26px;
 }

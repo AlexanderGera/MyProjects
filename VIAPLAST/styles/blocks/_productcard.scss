@@ -14,7 +14,6 @@
     flex-direction: column;
     gap: 15px;
   }
-
   &__text-holder {
     width: calc((43%) - 15px);
     min-width: 215px;
@@ -26,7 +25,9 @@
       font-size: 23px;
       line-height: 32px;
     }
-
+    & .products_header {
+      text-align: center;
+    }
     & .regular-text-font-style {
       line-height: 26px;
     }
