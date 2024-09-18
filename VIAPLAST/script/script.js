@@ -108,7 +108,6 @@ function formValidation() {
             }
         }
     });
-
     return isValid;
 }
 function emailChecking(element) {
@@ -121,7 +120,6 @@ contactForm.addEventListener('submit', (event) => {
     } else {
         formSending(event, contactForm);
     }
-
 });
 
 //send information from Form to E-mail
