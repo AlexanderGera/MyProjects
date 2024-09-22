@@ -26,8 +26,13 @@
   width: 275px;
   height: 60px;
   text-align: center;
-  line-height: 55px;
+  line-height: 58px;
   border: $button-regular-border-style;
+
+  &:hover {
+    color: $button-active-orange-color;
+    border: $button-active-border-style;
+  }
 }
 
 .body {
@@ -88,6 +93,11 @@ a {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 150px;
+
+    .regular-title-text {
+      font-size: 44px;
+      line-height: 52px;
+    }
   }
 
   &__statistic {
@@ -97,13 +107,36 @@ a {
     display: flex;
     justify-content: flex-end;
     padding: 25px 0;
-    margin-bottom: 75px;
+    margin-bottom: 125px;
   }
   &__statistic-text-holder {
     display: flex;
     width: 960px;
     background-color: rgba(255, 255, 255, 0.8);
   }
+
+  &__benefits {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-bottom: 125px;
+  }
+  &__benefits-item {
+    width: 47%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border-top: 1px solid $grey-color;
+
+    .regular-title-text {
+      max-width: 480px;
+    }
+  }
+
 }
 
 .statistic-text-holder {
@@ -113,7 +146,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-
   &__left-column {
     width: 45%;
     max-width: 435px;
@@ -129,7 +161,7 @@ a {
     line-height: 72px;
 
     .usd-simbol {
-      color: #E4E4E4;
+      color: $grey-color;
       font-size: 42px;
       line-height: 50px;
     }

@@ -76,12 +76,17 @@ input {
   font-size: 20px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  cursor: pointer;
   color: #F1897B;
   width: 275px;
   height: 60px;
   text-align: center;
-  line-height: 55px;
+  line-height: 58px;
   border: 1px solid #e8d4d4;
+}
+.button-link:hover {
+  color: #E54F3A;
+  border: 1px solid #E54F3A;
 }
 
 .body {
@@ -142,6 +147,10 @@ a {
   justify-content: space-between;
   margin-bottom: 150px;
 }
+.content-holder__intro-text .regular-title-text {
+  font-size: 44px;
+  line-height: 52px;
+}
 .content-holder__statistic {
   width: 100%;
   height: 670px;
@@ -149,12 +158,32 @@ a {
   display: flex;
   justify-content: flex-end;
   padding: 25px 0;
-  margin-bottom: 75px;
+  margin-bottom: 125px;
 }
 .content-holder__statistic-text-holder {
   display: flex;
   width: 960px;
   background-color: rgba(255, 255, 255, 0.8);
+}
+.content-holder__benefits {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-bottom: 125px;
+}
+.content-holder__benefits-item {
+  width: 47%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  border-top: 1px solid #E4E4E4;
+}
+.content-holder__benefits-item .regular-title-text {
+  max-width: 480px;
 }
 
 .statistic-text-holder__left-column, .statistic-text-holder__left-column_numbers, .statistic-text-holder__right-column {
