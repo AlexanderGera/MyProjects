@@ -50,7 +50,13 @@ $dark-theme-button-active-border-style: 1px solid #02E0AB;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
+}
 
+@mixin  white-regular-text {
+  font-family: $regular-text-font;
+  font-weight: 400;
+  letter-spacing: 0.10em;
+  color: #ffff;
 }
 
 

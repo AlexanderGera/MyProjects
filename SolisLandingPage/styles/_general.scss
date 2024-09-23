@@ -20,6 +20,22 @@
   line-height: 26px;
 }
 
+.regular-white-text {
+  @include white-regular-text;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.white-text-italic_author {
+  font-family: $title-text-font;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.12em;
+  color: #ffff;
+}
+
 .button-link {
   @include button-link-style;
   color: $button-regular-orange-color;
@@ -99,19 +115,19 @@ a {
       line-height: 52px;
     }
   }
-
   &__statistic {
     width: 100%;
     height: 670px;
-    background: url("../images/statistic-image_intro_bg.png") left no-repeat;
     display: flex;
     justify-content: flex-end;
+    background: url("../images/statistic-image_intro_bg.png") left no-repeat;
     padding: 25px 0;
     margin-bottom: 125px;
   }
+
   &__statistic-text-holder {
-    display: flex;
     width: 960px;
+    display: flex;
     background-color: rgba(255, 255, 255, 0.8);
   }
 
@@ -123,38 +139,59 @@ a {
     gap: 45px;
     margin-bottom: 125px;
   }
+
   &__benefits-item {
     width: 47%;
     max-width: 680px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
+    display: flex;
     gap: 15px;
+    padding: 0 15px;
     border-top: 1px solid $grey-color;
 
     .regular-title-text {
       max-width: 480px;
     }
   }
+  &__quotation {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 15%;
+    background: url("../images/quote-background.png") no-repeat;
+    background-size: cover;
 
+    .regular-white-text {
+      font-size: 32px;
+      line-height: 46px;
+      max-width: 710px;
+    }
+  }
 }
 
 .statistic-text-holder {
-&__left-column,
-&__left-column_numbers,
-&__right-column {
-  display: flex;
-  flex-direction: column;
-}
+  &__left-column,
+  &__left-column_numbers,
+  &__right-column {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__left-column {
     width: 45%;
     max-width: 435px;
     justify-content: space-around;
   }
+
   &__left-column_numbers {
     align-items: center;
     gap: 15px;
   }
+
   &__big-numbers {
     @include title-text-style;
     font-size: 68px;
@@ -166,10 +203,13 @@ a {
       line-height: 50px;
     }
   }
+
   &__right-column {
     width: 55%;
     max-width: 525px;
     gap: 35px;
     justify-content: center;
+    padding: 0 15px;
   }
+
 }
