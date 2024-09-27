@@ -29,6 +29,8 @@ $dark-theme-button-active-border-style: 1px solid #02E0AB;
   color: $regular-text-color;
   font-weight: 400;
   letter-spacing: 0.08em;
+  display: block;
+  z-index: 0;
 }
 
 @mixin title-text-style {
@@ -45,11 +47,12 @@ $dark-theme-button-active-border-style: 1px solid #02E0AB;
 @mixin button-link-style {
   font-family: $regular-text-font;
   display: block;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
+  z-index: 0;
 }
 
 @mixin  white-regular-text {
