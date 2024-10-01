@@ -204,7 +204,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-.content-holder__statistic, .content-holder__benefits, .content-holder__quotation, .content-holder__video_wrapper, .content-holder__promises, .content-holder__reviews {
+.content-holder__statistic, .content-holder__benefits, .content-holder__quotation, .content-holder__video_wrapper, .content-holder__promises, .content-holder__reviews, .content-holder__contacts {
   margin-bottom: 100px;
 }
 .content-holder__intro-text {
@@ -375,10 +375,11 @@ a {
 .content-holder__reviews_item {
   width: 100%;
   max-width: 400px;
-  height: 370px;
+  min-height: 370px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 25px;
   padding: 35px;
 }
 .content-holder__reviews_item:nth-child(1) {
@@ -392,6 +393,54 @@ a {
 .content-holder__reviews_item:nth-child(3) {
   background: url("../images/card-3-bg.png") no-repeat;
   background-size: cover;
+}
+.content-holder__contacts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.content-holder__contacts_text-holder, .content-holder__contacts_form-holder {
+  width: 45%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+}
+.content-holder__contacts_text-holder {
+  gap: 25px;
+}
+.content-holder__contacts_form-holder {
+  gap: 25px;
+}
+.content-holder__contacts_form-input-wrapper {
+  position: relative;
+}
+.content-holder__contacts_form-input-wrapper textarea {
+  height: 66px;
+  resize: none;
+}
+.content-holder__contacts_form-input {
+  width: 100%;
+  font-size: 22px;
+  border: none;
+  border-bottom: 1px solid #E4E4E4;
+  outline: none;
+}
+.content-holder__contacts_form-input:focus {
+  background-color: #ffd6d6;
+}
+.content-holder__contacts_form-label {
+  position: absolute;
+  font-size: 18px;
+  top: 4px;
+  left: 6px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  color: #262A3F;
+  font-style: italic;
+  font-weight: 300;
+  color: #b9b9b9;
 }
 
 .statistic-text-holder__left-column, .statistic-text-holder__left-column_numbers, .statistic-text-holder__right-column {

@@ -48,7 +48,6 @@
   transition: all 0.3s ease-in-out;
   overflow: hidden;
 
-
   &::before {
     content: '';
     width: 100%;
@@ -154,7 +153,8 @@ a {
   &__quotation,
   &__video_wrapper,
   &__promises,
-  &__reviews {
+  &__reviews,
+  &__contacts {
     margin-bottom: 100px;
   }
 
@@ -349,10 +349,11 @@ a {
     &_item {
       width: 100%;
       max-width: 400px;
-      height: 370px;
+      min-height: 370px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 25px;
       padding: 35px;
 
       &:nth-child(1) {
@@ -369,6 +370,62 @@ a {
         background: url("../images/card-3-bg.png") no-repeat;
         background-size: cover;
       }
+    }
+  }
+
+  &__contacts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    &_text-holder,
+    &_form-holder {
+      width: 45%;
+      max-width: 650px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_text-holder {
+      gap: 25px;
+    }
+
+    &_form-holder {
+      gap: 25px;
+    }
+
+    &_form-input-wrapper {
+      position: relative;
+
+      textarea {
+        height: 66px;
+        resize: none;
+      }
+    }
+
+    &_form-input {
+      width: 100%;
+      font-size: 22px;
+      border: none;
+      border-bottom: 1px solid $grey-color;
+      outline: none;
+
+      &:focus {
+        background-color: #ffd6d6;
+      }
+    }
+
+    &_form-label {
+      position: absolute;
+      font-size: 18px;
+      top: 4px;
+      left: 6px;
+      @include title-text-style;
+      font-style: italic;
+      font-weight: 300;
+      color: #b9b9b9;
     }
   }
 }
