@@ -11,7 +11,7 @@ $grey-color: #E4E4E4;
 
 $dark-theme-background-color: #161926;
 
-$button-regular-orange-color: #F1897B;
+$button-regular-orange-color: #ff745e;
 $button-active-orange-color: #E54F3A;
 $button-active-border-style: 1px solid #E54F3A;
 $button-regular-border-style: 1px solid #e8d4d4;
@@ -26,7 +26,8 @@ $dark-theme-button-active-border-style: 1px solid #02E0AB;
 
 @mixin header-menu-font {
   font-family: $regular-text-font;
-  color: $regular-text-color;
+  //color: $regular-text-color;
+  color: $button-active-orange-color;
   font-weight: 400;
   letter-spacing: 0.08em;
   display: block;
@@ -42,6 +43,7 @@ $dark-theme-button-active-border-style: 1px solid #02E0AB;
 @mixin regular-text-style {
   font-family: $regular-text-font;
   color: $regular-text-color;
+  font-weight: 300;
 }
 
 @mixin button-link-style {
