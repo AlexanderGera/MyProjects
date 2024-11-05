@@ -1,5 +1,4 @@
 //general styles
-
 .regular-title-text {
   @include title-text-style;
   display: inline-block;
@@ -11,7 +10,6 @@
     color: $title-italic-text-color;
   }
 }
-
 .regular-text {
   @include regular-text-style;
   display: inline-block;
@@ -81,6 +79,32 @@ a {
   text-decoration: none;
 }
 
+.btn_change-themes {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  top: 50%;
+  right: 8px;
+  background: #262A3F;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(229, 79, 58, 0.25);
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 50% auto;
+    transform: translateY(-50%);
+  }
+}
+
 .header-wrapper {
   width: 100%;
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
@@ -112,7 +136,6 @@ a {
     justify-content: space-between;
     margin-right: 50px;
   }
-
   &__menu-link {
     @include header-menu-font;
     width: 100px;
@@ -136,7 +159,6 @@ a {
       transition: all 0.3s ease-in-out;
     }
   }
-
   &__hamburger-menu {
     width: 40px;
     height: 40px;
@@ -164,7 +186,6 @@ a {
       z-index: -1;
       transition: all 0.3s ease-in-out;
     }
-
     &_bar {
       width: 15px;
       height: 2px;
@@ -191,7 +212,6 @@ a {
   &__contacts {
     margin-bottom: 100px;
   }
-
   &__intro-text {
     width: 55%;
     max-width: 650px;
@@ -224,7 +244,6 @@ a {
       box-shadow: 2px 1px 12px 2px rgba(133, 187, 177, 0.6);
     }
   }
-
   &__benefits {
     width: 100%;
     min-height: 620px;
@@ -233,7 +252,6 @@ a {
     flex-wrap: wrap;
     gap: 45px;
   }
-
   &__benefits-item {
     width: 47%;
     max-width: 680px;
@@ -249,7 +267,6 @@ a {
       max-width: 480px;
     }
   }
-
   &__quotation {
     width: 100%;
     min-height: 400px;
@@ -260,7 +277,7 @@ a {
     background-attachment: fixed;
     background-size: cover;
     gap: 30px;
-    padding: 15px 15%;
+    padding: 15px 10%;
 
     .bold-white-text {
       position: relative;
@@ -274,13 +291,12 @@ a {
         height: 84px;
         display: inline-block;
         position: absolute;
-        top: -34px;
-        left: -62px;
+        top: -25px;
+        left: -35px;
         background: url("../images/quote-background_icons.png");
       }
     }
   }
-
   &__video {
     &_wrapper {
       width: 100%;
@@ -289,7 +305,6 @@ a {
       align-items: center;
       gap: 50px;
     }
-
     &_frame {
       max-width: 970px;
       width: 100%;
@@ -310,7 +325,6 @@ a {
         transform: translateY(-50%);
         right: 1%;
       }
-
       iframe {
         width: 100%;
         aspect-ratio: 1.6;
@@ -318,7 +332,6 @@ a {
         border-radius: 15px;
       }
     }
-
     &_text {
       max-width: 970px;
       width: 100%;
@@ -328,7 +341,6 @@ a {
       gap: 25px;
     }
   }
-
   &__promises {
     width: 100%;
     min-height: 540px;
@@ -363,11 +375,9 @@ a {
           line-height: 32px;
           color: $white-text-color;
         }
-
       }
     }
   }
-
   &__reviews {
     width: 100%;
     display: flex;
@@ -382,7 +392,6 @@ a {
       flex-direction: column;
       gap: 10px;
     }
-
     &_items-holder {
       width: 100%;
       display: flex;
@@ -390,7 +399,6 @@ a {
       flex-wrap: wrap;
       gap: 50px;
     }
-
     &_item {
       width: 100%;
       max-width: 400px;
@@ -405,19 +413,16 @@ a {
         background: url("../images/card-1-bg.png") center no-repeat;
         background-size: cover;
       }
-
       &:nth-child(2) {
         background: url("../images/card-2-bg.png") center no-repeat;
         background-size: cover;
       }
-
       &:nth-child(3) {
         background: url("../images/card-3-bg.png") center no-repeat;
         background-size: cover;
       }
     }
   }
-
   &__contacts {
     width: 100%;
     display: flex;
@@ -433,7 +438,6 @@ a {
       flex-direction: column;
       gap: 25px;
     }
-
     &_form-input-wrapper {
       position: relative;
 
@@ -442,7 +446,6 @@ a {
         resize: none;
       }
     }
-
     &_form-input {
       width: 100%;
       height: 30px;
@@ -457,13 +460,11 @@ a {
       &:not(:placeholder-shown) {
         background-color: #ffe0e0;
       }
-
       &:not(:placeholder-shown) + .content-holder__contacts_form-label {
         color: #262A3F;
         transform: translateY(-23px);
       }
     }
-
     &_form-label {
       position: absolute;
       font-size: 18px;
@@ -487,7 +488,6 @@ a {
     align-items: center;
     justify-content: space-between;
   }
-
   &__items-holder {
     min-width: 250px;
     display: flex;
@@ -496,7 +496,6 @@ a {
     .regular-text {
       font-size: 14px;
     }
-
     .regular-text.bold {
       font-weight: 400;
       font-size: 15px;
@@ -511,7 +510,6 @@ a {
     display: flex;
     flex-direction: column;
   }
-
   &__left-column {
     width: 45%;
     max-width: 435px;
@@ -519,12 +517,10 @@ a {
     gap: 35px;
     padding: 15px;
   }
-
   &__left-column_numbers {
     align-items: center;
     gap: 15px;
   }
-
   &__big-numbers {
     @include title-text-style;
     color: $white-text-color;
@@ -554,7 +550,6 @@ a {
       line-height: 50px;
     }
   }
-
   &__right-column {
     width: 55%;
     max-width: 525px;
@@ -577,6 +572,7 @@ a {
   .button-link:hover::before {
     transform: translateX(100%);
   }
+
   .button-link:hover {
     color: white;
     box-shadow: 3px 2px 12px 3px rgba(75, 85, 98, 0.3);
@@ -598,6 +594,7 @@ a {
     transform: translateX(100%);
     transition: none;
   }
+
   .header__menu-link:active {
     color: white;
     transition: none;
@@ -607,6 +604,7 @@ a {
     transform: translateX(100%);
     transition: none;
   }
+
   .button-link:active {
     color: white;
     box-shadow: 3px 2px 12px 3px rgba(75, 85, 98, 0.3);
@@ -617,13 +615,175 @@ a {
     background: none;
     transition: none;
   }
+
   .header__hamburger-menu:active::before {
     transform: translateX(100%);
     transition: none;
   }
+
   .header__hamburger-menu:active .header__hamburger-menu_bar {
     background: $white-text-color;
     transition: none;
+  }
+}
+
+//dark theme
+.body.dark {
+  background: url(../images/bg-dark.png) top center no-repeat #161926;
+
+  .header-wrapper {
+    background: linear-gradient(270deg, rgba(7, 7, 7, 0.11) 0%, rgba(45, 45, 45, 0.24) 24.1%, rgba(141, 141, 141, 0.07) 47.19%), rgba(101, 101, 101, 0.12);
+  }
+
+  .header {
+    &__menu-link {
+      color: $dark-theme-button-regular-green-color;
+
+      &::before {
+        background-color: $dark-theme-button-active-green-color;
+      }
+    }
+    &__hamburger-menu {
+      border: $dark-theme-button-active-border-style;
+      background: rgba(131, 131, 131, 0.5);
+
+      &::before {
+        background-color: $dark-theme-button-active-green-color;
+      }
+      &_bar {
+        background: $dark-theme-button-active-green-color;
+      }
+    }
+  }
+
+  .btn_change-themes {
+    border: 1px solid rgba(83, 243, 205, 0.25);
+  }
+
+  .button-link {
+    color: $dark-theme-button-regular-green-color;
+    border: $dark-theme-button-active-border-style;
+    background: rgba(131, 131, 131, 0.5);
+
+    &::before {
+      background-color: $dark-theme-button-active-green-color;
+    }
+  }
+
+  .big-numbers_decoration::before {
+    background-color: $dark-theme-button-regular-green-color;
+  }
+
+  .usd-simbol {
+    color: rgba(83, 243, 205, 0.56);
+  }
+
+  .italic {
+    color: $dark-theme-title-italic-text-color;
+  }
+
+  .regular-text,
+  .regular-title-text {
+    color: white;
+  }
+
+  .content-holder__benefits-item,
+  .footer {
+    border-top: $dark-theme-regular-border-style;
+  }
+
+  .content-holder__video_frame {
+    border: $dark-theme-regular-border-style;
+
+    &::after,
+    & iframe {
+      border: $dark-theme-regular-border-style;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .header {
+      &__menu {
+        background: rgba(22, 25, 38, 0.8);
+      }
+      &__menu-link {
+        border-bottom: $dark-theme-button-active-border-style;
+      }
+    }
+  }
+
+  .content-holder__contacts_form-label {
+    color: #78adfd;
+  }
+
+  // to avoiding stucking of HOVER when touch devices using
+  @media (hover: hover) {
+    .header__menu-link:hover::before {
+      transform: translateX(100%);
+    }
+
+    .header__menu-link:hover {
+      color: white;
+    }
+
+    .button-link:hover::before {
+      transform: translateX(100%);
+    }
+
+    .button-link:hover {
+      color: white;
+      box-shadow: 3px 2px 12px 3px rgba(75, 85, 98, 0.3);
+    }
+
+    .header__hamburger-menu:hover {
+      background: none;
+    }
+
+    .header__hamburger-menu:hover::before {
+      transform: translateX(100%);
+    }
+
+    .header__hamburger-menu:hover .header__hamburger-menu_bar {
+      background: $white-text-color;
+    }
+  }
+
+  @media (hover: none) {
+    .header__menu-link:active::before {
+      transform: translateX(100%);
+      transition: none;
+    }
+
+    .header__menu-link:active {
+      color: white;
+      transition: none;
+    }
+
+    .button-link:active::before {
+      transform: translateX(100%);
+      transition: none;
+    }
+
+    .button-link:active {
+      color: white;
+      box-shadow: 3px 2px 12px 3px rgba(75, 85, 98, 0.3);
+      transition: none;
+    }
+
+    .header__hamburger-menu:active {
+      background: none;
+      transition: none;
+    }
+
+    .header__hamburger-menu:active::before {
+      transform: translateX(100%);
+      transition: none;
+    }
+
+    .header__hamburger-menu:active .header__hamburger-menu_bar {
+      background: $white-text-color;
+      transition: none;
+    }
   }
 }
 
@@ -653,7 +813,6 @@ a {
       &.active {
         left: 0;
       }
-
       &-link {
         width: 100%;
         height: 40px;
@@ -662,11 +821,11 @@ a {
         border-bottom: 1px solid $button-regular-orange-color;
       }
     }
-
     &__hamburger-menu {
       display: flex;
     }
   }
+
   .content-holder__intro-text {
     width: auto;
     min-height: 350px;
@@ -675,9 +834,7 @@ a {
 }
 
 //adopt. style for screen 800px
-
 @media screen and (max-width: 800px) {
-
   .content-holder {
     &__statistic,
     &__benefits,
@@ -688,25 +845,20 @@ a {
     &__contacts {
       margin-bottom: 75px;
     }
-
     &__benefits-item {
       width: 100%;
     }
-
     &__quotation .bold-white-text {
       font-size: 28px;
       line-height: 45px;
     }
-
     &__reviews {
       align-items: center;
     }
-
     &__reviews_items-holder {
       justify-content: center;
       gap: 55px;
     }
-
     &__contacts {
       flex-direction: column;
       align-items: center;
@@ -715,7 +867,6 @@ a {
       &_text-holder {
         width: 100%;
       }
-
       &_form-holder {
         width: 100%;
         gap: 35px;
@@ -730,34 +881,64 @@ a {
 }
 
 //adopt. style for screen 600px
-
 @media screen and (max-width: 600px) {
-
   .content-holder {
-
     &__statistic {
-
       &-text-holder {
         flex-direction: column;
         align-items: center;
-
       }
-
     }
-
+    &__intro-text .button-link,
+    &__contacts_form-holder .button-link {
+      align-self: center;
+    }
     &__promises-text-holder {
       flex-direction: column;
     }
-
     &__quotation .bold-white-text {
       font-size: 26px;
       line-height: 38px;
     }
-
   }
+
   .statistic-text-holder__right-column,
   .statistic-text-holder__left-column {
     width: 100%;
   }
+  .statistic-text-holder__right-column .button-link {
+    align-self: center;
+  }
+}
 
+//adopt. style for screen 600px
+@media screen and (max-width: 480px) {
+  .header-wrapper {
+    margin-bottom: 75px;
+  }
+
+  .content-holder {
+    &__intro-text .regular-title-text,
+    &__video_text .regular-title-text,
+    &__benefits-item .regular-title-text,
+    &__reviews_title-holder .regular-title-text,
+    &__contacts_text-holder .regular-title-text {
+      text-align: center;
+      font-size: 32px;
+      line-height: 42px;
+    }
+    &__benefits {
+      gap: 25px;
+    }
+    &__benefits-item {
+      padding-top: 35px;
+    }
+    &__quotation .bold-white-text {
+      font-size: 21px;
+      line-height: 32px;
+    }
+    &__promises-text-holder_item {
+      width: 60%;
+    }
+  }
 }
