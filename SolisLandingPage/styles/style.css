@@ -663,6 +663,7 @@ a {
 }
 .body.dark .btn_change-themes {
   border: 1px solid rgba(83, 243, 205, 0.25);
+  background: white;
 }
 .body.dark .button-link {
   color: #53F3CD;
@@ -705,6 +706,14 @@ a {
 }
 .body.dark .content-holder__contacts_form-label {
   color: #78adfd;
+}
+.body.dark .content-holder__contacts_form-input {
+  background-color: #161926;
+  color: white;
+  border-bottom: 1px solid #515773;
+}
+.body.dark .content-holder__contacts_form-input:focus, .body.dark .content-holder__contacts_form-input:not(:placeholder-shown) {
+  background-color: rgba(131, 131, 131, 0.5);
 }
 @media (hover: hover) {
   .body.dark .header__menu-link:hover::before {

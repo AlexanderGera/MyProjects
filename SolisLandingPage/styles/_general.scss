@@ -658,6 +658,7 @@ a {
 
   .btn_change-themes {
     border: 1px solid rgba(83, 243, 205, 0.25);
+    background: white;
   }
 
   .button-link {
@@ -714,6 +715,17 @@ a {
 
   .content-holder__contacts_form-label {
     color: #78adfd;
+  }
+
+  .content-holder__contacts_form-input {
+    background-color: #161926;
+    color: white;
+    border-bottom: $dark-theme-regular-border-style;
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      background-color: rgba(131, 131, 131, 0.5);
+    }
   }
 
   // to avoiding stucking of HOVER when touch devices using
