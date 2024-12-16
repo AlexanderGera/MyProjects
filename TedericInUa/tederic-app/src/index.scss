@@ -1,0 +1,15 @@
+@import "styles/reset";
+@import "styles/variables";
+
+@import url('./assets/fonts/Open_Sans/OpenSans.css');
+@import url('./assets/fonts/Lato/Lato.css');
+@import url('./assets/fonts/Roboto/Roboto.css');
+
+
+body {
+  font-family: Open Sans, sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+}
