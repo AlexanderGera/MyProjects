@@ -12,8 +12,7 @@
 }
 
 .leftMenu__regularText {
-  @include columnMenuTitleDecoration;
-  text-transform: initial;
+  @include regularTextDecoration;
   line-height: 20px;
   font-weight: 400;
   align-self: flex-start;

@@ -21,8 +21,15 @@ $regularButtonBackground: background linear-gradient(180deg, #046bb9, #1f2e62);
   font-size: 14px;
 
 }
-@mixin columnMenuRegularTextDecoration {
+@mixin regularTextDecoration {
   color: $regularTitleFontBlueColor;
   font-size: 14px;
+
+}
+
+@mixin regularTitleDecoration {
+  color: $logoBlueColor;
+  font-size: 16px;
+  font-weight: 500;
 
 }
